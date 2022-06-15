@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/color_main_background">
+
+    <TextView
+        android:id="@+id/counterTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/counter_height"
+        android:textColor="@color/white"
+        android:textSize="@dimen/counter_text_size"
+        android:gravity="center"
+        android:background="@drawable/rounded_rectangle_44"
+        app:layout_constraintTop_toTopOf="@id/plusButton"
+        app:layout_constraintBottom_toBottomOf="@id/plusButton"
+        app:layout_constraintStart_toStartOf="@id/minusButton"
+        app:layout_constraintEnd_toEndOf="@id/plusButton"
+        tools:text="TextView"/>
+
+    <ImageButton
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small_rounded_button_selector"
+        android:src="@drawable/icon_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small_rounded_button_selector"
+        android:src="@drawable/icon_minus"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

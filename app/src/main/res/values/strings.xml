@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FragmentWithNotification</string>
+    
+    <string name="notification_title">Chat heads active</string>
+    <string name="notification_text">Notification %d</string>
+    <string name="create_new_notification">Create new notification</string>
+
+    <string name="notification_channel_name">My channel</string>
+    <string name="notification_channel_description">My channel description</string>
+</resources>
